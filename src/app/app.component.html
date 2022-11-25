@@ -1,0 +1,14 @@
+<h1>Bin2Dec</h1>
+
+<form [formGroup]="form" (ngSubmit)="convertToDecimal()">
+  <input formControlName="inputBinary" placeholder="Enter a binary value">
+  <span *ngIf="form.get('inputBinary')?.hasError('pattern')">
+    Valor inserido é diferente de 0 ou 1
+  </span>
+
+  <button type="submit" [disabled]="form.invalid">Converter</button>
+</form>
+<div class="result" *ngIf="decimalValue != undefined">
+  <span>Decimal value:</span>
+  <p>{{ decimalValue }}</p>
+</div>

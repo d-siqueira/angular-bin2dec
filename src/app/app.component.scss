@@ -1,0 +1,62 @@
+$green: rgb(40 167 41);
+$red: rgb(255 85 85);
+$white: #f6f6f6;
+
+h1 {
+  color: $white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  max-width: 400px;
+
+  input {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba($white, 0.8);
+    outline: 0;
+  }
+
+  span {
+    font-size: 1rem;
+    color: $red;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: $green;
+    margin-top: 2rem;
+  }
+}
+
+.result {
+  margin-top: 3rem;
+  color: $green;
+
+  span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 2rem;
+    text-align: center;
+    outline-style: dashed;
+    outline-color: $green;
+  }
+}
